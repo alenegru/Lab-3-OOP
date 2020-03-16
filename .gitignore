@@ -1,4 +1,8 @@
+#Visual studio stuff
 Debug
 Lab3-oop.vcxproj
 Lab3-oop.vcxproj.filters
 Lab3-oop.vcxproj.user
+
+#XCode stuff
+lab3.xcodeproj
