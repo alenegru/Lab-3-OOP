@@ -11,6 +11,7 @@ int main()
 	int len = sizeof(numbers) / sizeof(numbers[0]);
 	for (int i = 0; i < len; i++)
 		tree.insert(numbers[i]);
-
+	tree.inorder();
+	
 
 }

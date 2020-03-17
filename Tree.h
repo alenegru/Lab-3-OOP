@@ -16,6 +16,13 @@ public:
 	{
 		insert(key, root);
 	}
+	//showing the numbers from the tree in order '<'
+	void inorder(Node* tree);
+	//beginning from the root
+	void inorder()
+	{
+		inorder(root);
+	}
 
 
 };
