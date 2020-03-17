@@ -9,6 +9,13 @@ private:
 
 public:
 	Tree();
+	//inserts an element on the right position in the binary search tree
+	void insert(int key, Node* tree);
+	//inserts the element beginning from the root
+	void insert(int key)
+	{
+		insert(key, root);
+	}
 
 
 };

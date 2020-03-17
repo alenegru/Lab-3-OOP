@@ -3,7 +3,7 @@
 
 class Node
 {
-	//friend class Tree;
+	friend class Tree;
 private:
 	int key;
 	Node* left, * right;
