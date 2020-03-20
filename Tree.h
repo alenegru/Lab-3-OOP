@@ -23,6 +23,13 @@ public:
 	{
 		inorder(root);
 	}
+	//will give the height of the Tree
+	int height(Node* tree);
+	//starting from the root
+	int height()
+	{
+		return height(root);
+	}
 
 
 };

@@ -50,3 +50,11 @@ void Tree::inorder(Node* tree)
     inorder(tree->right);
 
 }
+
+int Tree::height(Node* tree)
+{
+    if (!tree)
+        return 0;
+    return 1 + max(height(tree->left), height(tree->right));
+}
+
