@@ -9,7 +9,7 @@ Tree::Tree()
 	root = NULL;
 }
 
-void Tree::insert(int value, Node* tree)
+bool Tree::insert(int value, Node* tree)
 {
     if (!tree)
     {
@@ -39,6 +39,7 @@ void Tree::insert(int value, Node* tree)
                 insert(value, tree->right);
         }
     }
+    return true;
 }
 
 void Tree::inorder(Node* tree)
