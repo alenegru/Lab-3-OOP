@@ -13,7 +13,10 @@ void Test()
 	int len = sizeof(numbers) / sizeof(numbers[0]);
 	for (int i = 0; i < len; i++)
 		assert(tree.insert(numbers[i])==true);
-
 	assert(tree.height()==5);
+    assert(tree.countNodes(tree.getRoot()) == 5);
+    assert(tree.deleteNode(2, tree.getRoot()));
+    assert(tree.countNodes(tree.getRoot()) == 4);
+    
 	cout << "all good" << endl;
 }

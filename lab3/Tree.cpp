@@ -126,7 +126,7 @@ Node* Tree::minValue(Node* node) {
     return current;
 }
 
-int countNodes(Node* node) {
+int Tree::countNodes(Node* node) {
     int counter = 1;
 
     if (node->left != NULL)

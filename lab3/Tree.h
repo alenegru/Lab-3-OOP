@@ -33,17 +33,18 @@ public:
 		inorder(root);
 	}
     
-    //TODO
+
     //deletes a node from a tree
     Node* deleteNode(int value, Node* root);
     //helper method
     Node* minValue(Node* node);
+    
     //print its nodes in postorder
     void postorder(Node* node);
 
     //print its nodes in preorder
     void preorder(Node* node);
-    //TODO
+
     //returns number of Nodes
     int countNodes(Node* node);
 
