@@ -9,6 +9,10 @@ Tree::Tree()
 	root = NULL;
 }
 
+Tree::Tree(int data) {
+    root = new Node(data);
+}
+
 bool Tree::insert(int value, Node* tree)
 {
     if (!tree)
@@ -59,3 +63,22 @@ int Tree::height(Node* tree)
     return 1 + max(height(tree->left), height(tree->right));
 }
 
+void Tree::deleteNode(int v, Node* tree) {
+    
+}
+
+int countNodes(Node* node) {
+    int counter = 1;
+
+    if (node->left != NULL)
+        counter += countNodes(node->left);
+
+    if (node->right != NULL)
+        counter += countNodes(node->right);
+
+    return counter;
+}
+
+int Tree::countEdges(Node* node) {
+    return countNodes(node) - 1;
+}

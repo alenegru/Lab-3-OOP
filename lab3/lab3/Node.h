@@ -4,7 +4,7 @@
 class Node
 {
 	friend class Tree;
-private:
+public:
 	int key;
 	Node* left, * right;
 public:
