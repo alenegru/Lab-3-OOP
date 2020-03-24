@@ -35,13 +35,14 @@ public:
     
     //TODO
     //deletes a node from a tree
-    void deleteNode(int v, Node* tree);
-    
+    Node* deleteNode(int value, Node* root);
+    //helper method
+    Node* minValue(Node* node);
     //print its nodes in postorder
-    void printPostorder(Node* node);
+    void postorder(Node* node);
 
     //print its nodes in preorder
-    void printPreorder(Node* node);
+    void preorder(Node* node);
     //TODO
     //returns number of Nodes
     int countNodes(Node* node);
