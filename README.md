@@ -1,2 +1,2 @@
-# Lab-3-OOP
-Ale + Laura
+# Tree-Traversals
+Given a tree, program specifies the traversals of the tree: inorder, postorder and preorder.
